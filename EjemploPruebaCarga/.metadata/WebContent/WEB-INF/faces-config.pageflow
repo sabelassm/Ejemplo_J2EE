@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12667068190460" configfile="/EjemploPruebaCarga/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="pages/login" x="48" y="60" id="pf12667072299687" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf126673035646810 pf126673035646811" path="/pages/login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/welcome" x="122" y="754" id="pf12667072299689" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" path="/pages/welcome.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/stuff" x="216" y="24" id="pf126673035646812" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf126673035646810" path="/pages/stuff.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/autherror.html" x="192" y="108" id="pf126673035646813" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf126673035646811" path="/pages/loginerror.jsp"/>
+  <links id="pf126673035646810" target="pf126673035646812" source="pf12667072299687" outcome="ok"/>
+  <links id="pf126673035646811" target="pf126673035646813" source="pf12667072299687" outcome="error"/>
+</pageflow:Pageflow>
